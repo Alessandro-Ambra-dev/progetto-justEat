@@ -1,1 +1,55 @@
 /* write your css here */
+section{
+    margin-top: 33vh;
+    padding: 40vh;      
+}
+section > p{
+margin-top: 10px;
+margin-left: 25px;
+}
+
+section > h1{
+margin-left: 25px;
+}
+
+main{
+ overflow-x:scroll;
+ display: flex;
+ 
+    
+}
+  
+
+div{
+   
+    padding: 10px;
+    margin-top: 10px;
+    
+    
+    
+  
+ 
+  
+  
+}
+
+div img{
+height: 130px;
+background-color: rgba(255, 68, 0, 0.887);
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+
+
+
+}
+
+div p {
+display: flex;
+justify-content: center;
+}
+
+img:hover{
+    background-color: orangered;
+}
+
+
