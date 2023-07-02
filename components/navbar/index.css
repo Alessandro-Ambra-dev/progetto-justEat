@@ -1,3 +1,5 @@
+@import url(common.css);
+
 .container{
     display: flex;
     justify-content: space-around;
@@ -6,38 +8,67 @@
 }
 
 #topImage img{
-    height: 40px;
+    height: 60px;
+    cursor: pointer;
 }
 
-ul{
+nav ul:first-child{
     display: flex;
     align-items: center;
     gap: 3rem;
     justify-content: flex-end;
-
+    
     
 }
 
+
 #dropdwn-menu{
-    display: none;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 4rem;
+    right: 15rem;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 #dropdwn-title{
     display: flex;
     align-items: center;
-    justify-content: left;
 }
+
+#dropdwn-title h3{
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    font-size: 1.24rem;
+}
+
 
 #dropdwn-menu ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-count: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 2rem;
 }
 
-#dropdwn-menu li{
-    column-count: 2;
+
+#dropdwn-menu a{
+    display: flex;
+    align-items: center;
 }
+
+#dropdwn-menu img{
+    height: 21px;
+    width: 21px;
+    margin: 0 16px;
+}
+
+#swiss a{
+    margin-right: 65px;
+}
+
+
 
 
 ul a{
@@ -45,7 +76,7 @@ ul a{
     color: black;
 }
 
-li:hover{
+nav ul:first-child li:hover{
     background-color: #DFE0DF;
     border-radius: 10px;
 }
@@ -55,6 +86,7 @@ li{
     display: flex;
     align-items: center;
     gap: 7px;
+    cursor: pointer;
     
 }
 
@@ -66,14 +98,6 @@ nav li:last-child{
 }
 
 nav li:last-child:hover #dropdwn-menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    right: 15rem;
-    margin-top: 3rem;
-    background-color: #DFE0DF;
-
-
-    
+    visibility: visible;
+    transition: 0.600ms;  
 }
