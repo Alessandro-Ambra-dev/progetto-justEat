@@ -1,4 +1,6 @@
 /* write your css here */
+@import url(common.css);
+
 section{
     margin-top: 33vh;
     padding: 40vh;      
