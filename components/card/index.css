@@ -1,5 +1,5 @@
 /* write your css here */
-@import url(common.css);
+@import url(../../assets/css/common.css);
 
 section{
     margin-top: 33vh;
