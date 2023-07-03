@@ -1,0 +1,9 @@
+.imgContainer{
+    max-height: 600px;
+}
+
+img, source{
+    width: 100%;
+    vertical-align: bottom;
+    border-style: none;
+}
