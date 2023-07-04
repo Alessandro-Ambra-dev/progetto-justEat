@@ -56,17 +56,15 @@ nav ul:first-child{
 #dropdwn-menu a{
     display: flex;
     align-items: center;
+    gap: 1rem;
+    width: 100%;
 }
 
 #dropdwn-menu img{
     height: 21px;
     width: 21px;
-    margin: 0 16px;
 }
 
-#swiss a{
-    margin-right: 65px;
-}
 
 
 
