@@ -1,0 +1,42 @@
+#banner-bottom {
+  background-color: #f5f3f1;
+}
+#banner-bottom #banner-cont1 {
+  width: 100%;
+  max-width: 1272px;
+  margin: 0 auto;
+  height: 180px;
+}
+#banner-bottom #banner-cont1 #flex-banner-cont {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+#banner-bottom #banner-cont1 #flex-banner-cont #stores-section {
+  line-height: 1.4;
+  padding: 16px;
+  padding-left: 0;
+}
+#banner-bottom #banner-cont1 #flex-banner-cont #stores-section h2 {
+  margin-left: 2.5rem;
+  padding-left: 1rem;
+}
+#banner-bottom #banner-cont1 #flex-banner-cont #stores-section ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 0 0 16px;
+  justify-content: flex-start;
+}
+#banner-bottom #banner-cont1 #flex-banner-cont #stores-section ul li {
+  list-style: none;
+  width: 50%;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+#banner-bottom #banner-cont1 #flex-banner-cont #stores-section ul li svg {
+  height: 40px;
+  width: 135px;
+}/*# sourceMappingURL=banner.css.map */
