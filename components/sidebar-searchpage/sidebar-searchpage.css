@@ -59,28 +59,45 @@ body {
   width: 100%;
   margin-bottom: 5px;
   display: flex;
-  justify-content: space-between;
-}
-.sidebar-item .description-box {
-  display: flex;
-  flex-direction: flex-start;
 }
 .sidebar-item:hover {
   border: 2px solid #5ba1fd;
   box-sizing: border-box;
   color: #017b39;
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
 .sidebar-item:hover::before {
-  content: "√ ";
-  margin-right: 5px;
+  content: "√";
 }
 .sidebar-item .description {
   display: inline-block;
   box-sizing: border-box;
+  flex: 1;
 }
 .sidebar-item .amount {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.sidebar-item-disabled {
+  background: #fff;
+  color: #ececec;
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid #ececec;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+}
+.sidebar-item-disabled .description {
+  display: inline-block;
+  box-sizing: border-box;
+  flex: 1;
+}
+.sidebar-item-disabled .amount {
   display: inline-block;
   box-sizing: border-box;
 }

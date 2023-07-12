@@ -60,27 +60,45 @@ body {
   width: 100%;
   margin-bottom: 5px;
   display: flex;
-  justify-content: space-between;
-
-  .description-box {
-    display: flex;
-    flex-direction: flex-start;
-  }
 
   &:hover {
     border: 2px solid #5ba1fd;
     box-sizing: border-box;
     color: #017b39;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    // justify-content: space-between;
   }
   &:hover::before {
-    content: "√ ";
-    margin-right: 5px;
+    content: "√";
   }
   .description {
     display: inline-block;
     box-sizing: border-box;
+    flex: 1;
+  }
+  .amount {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+
+.sidebar-item-disabled {
+  background: #fff;
+  color: #ececec;
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid #ececec;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+
+  .description {
+    display: inline-block;
+    box-sizing: border-box;
+    flex: 1;
   }
   .amount {
     display: inline-block;
