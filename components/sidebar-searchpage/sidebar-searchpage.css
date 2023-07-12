@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@import url(../../assets/css/common.css);
+body {
+  background: #fcfcfc;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.sidebar-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.reset {
+  background: #fff;
+  color: #313c3f;
+  cursor: pointer;
+  border: 1px solid #f2f0ef;
+  border-radius: 30px;
+  padding: 5px;
+}
+.reset:hover {
+  background: #f4f4f5;
+}
+
+.cousines-section {
+  min-width: 250px;
+  width: 17%;
+}
+
+.cousines-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.cousines-header .icon-and-title {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cousines-header .icon-and-title img {
+  height: 100%;
+  margin-right: 5px;
+}
+
+.sidebar-item {
+  background: #fff;
+  color: #4e5759;
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid #f2f0ef;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-item .description-box {
+  display: flex;
+  flex-direction: flex-start;
+}
+.sidebar-item:hover {
+  border: 2px solid #5ba1fd;
+  box-sizing: border-box;
+  color: #017b39;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar-item:hover::before {
+  content: "√ ";
+  margin-right: 5px;
+}
+.sidebar-item .description {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.sidebar-item .amount {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.see-others {
+  list-style: none;
+  text-align: center;
+}
+
+.filters-section {
+  min-width: 250px;
+  width: 17%;
+}
+
+.filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.filters-header .icon-and-title {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.filters-header .icon-and-title img {
+  height: 100%;
+  margin-right: 5px;
+}
+
+li > button {
+  list-style: none;
+}
+
+/*# sourceMappingURL=sidebar-searchpage.css.map */
