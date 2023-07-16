@@ -111,18 +111,36 @@
     padding: 32px;
     margin: 0 auto;
     background-color: #efedea;
+    @media screen and (max-width:376px) {
+      height: 100%;
+      flex-wrap: wrap;
+      padding: 0;
+    }
     #legal-field {
       flex: 1;
       display: flex;
       align-items: center;
+      @media screen and (max-width:376px){
+        order: 2;
+        padding: 16px;
+      }
     }
     #footer-brands {
       ul {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        @media screen and (max-width:376px) {
+          padding: 16px 16px 0;
+          margin: 0 0 16px;
+          flex-wrap: nowrap;
+          gap: 32px;
+        }
         li {
           margin-right: 56px;
+          @media screen and (max-width:376px) {
+            margin-right: 0;            
+          }
           svg {
             max-width: 67px;
             height: 28px;

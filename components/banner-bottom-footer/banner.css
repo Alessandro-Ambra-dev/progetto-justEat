@@ -119,18 +119,44 @@
   margin: 0 auto;
   background-color: #efedea;
 }
+@media screen and (max-width: 376px) {
+  #banner-bottom #banner-cont2 {
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 #banner-bottom #banner-cont2 #legal-field {
   flex: 1;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 376px) {
+  #banner-bottom #banner-cont2 #legal-field {
+    order: 2;
+    padding: 16px;
+  }
 }
 #banner-bottom #banner-cont2 #footer-brands ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
+@media screen and (max-width: 376px) {
+  #banner-bottom #banner-cont2 #footer-brands ul {
+    padding: 16px 16px 0;
+    margin: 0 0 16px;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+}
 #banner-bottom #banner-cont2 #footer-brands ul li {
   margin-right: 56px;
+}
+@media screen and (max-width: 376px) {
+  #banner-bottom #banner-cont2 #footer-brands ul li {
+    margin-right: 0;
+  }
 }
 #banner-bottom #banner-cont2 #footer-brands ul li svg {
   max-width: 67px;
