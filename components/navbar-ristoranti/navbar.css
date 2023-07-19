@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  margin: 0 32px;
+}
+
+#topImage img {
+  height: 60px;
+  cursor: pointer;
+}
+
+nav #list-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: flex-end;
+}
+
+#list-dropdown a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+nav #list-dropdown li:hover {
+  background-color: #dfe0df;
+  border-radius: 5px;
+}
+
+#list-dropdown li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #list-dropdown {
+    visibility: hidden;
+  }
+}
