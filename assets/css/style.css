@@ -1,9 +1,18 @@
 /* >FIle CSS FINALE DOVE VANNO LE @RULES */
 @import url(common.css);
 @import url(../../components/navbar/navbar.css);
-@import url(../../components/backgound-image/);
+@import url(../../components/backgound-image/index.css);
+@import url(../../components/card/cards.css);
 @import url(../../components/searchbar/searchbar.css);
-@import url(../../components/card/index.css);
-@import url(../../components/storeSection/index.css);
-@import url(../../components/footer/style.css);
+@import url(../../components/storeSection/storeSection.css);
+@import url(../../components/footer/footer.css);
+@import url(../../components/banner-bottom-footer/banner.css);
+@import url(../../components/navbar-ristoranti/navbar-ristoranti.css);
+/* importa css di card-searchpage */
 @import url(../../components/searchbar-searchpage/searchbar.css);
+/* @import url(../../components/address-change-area/address-change-area.css); */
+@import url(../../components/card-restaurants-searchpage/card-restaurants.css);
+@import url(../../components/sidebar-searchpage/sidebar-searchpage.css);
+@import url(../../components/footer/footer.css);
+@import url(../../components/banner-bottom-footer/banner.css);
+@import url(home.css);

@@ -1,1 +1,15 @@
-/*# sourceMappingURL=home.css.map */
+html, body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: JetSansDigital, Arial, sans-serif;
+  color: #242e30;
+  font-weight: 400;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}/*# sourceMappingURL=home.css.map */
+
+#main-container{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

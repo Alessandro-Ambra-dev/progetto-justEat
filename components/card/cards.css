@@ -1,53 +1,59 @@
 /* write your css here */
 
 
-section {
-  margin-top: 33vh;
-  padding: 40vh;
+#card-section{
+  padding: 48px;
+  position: relative;
+  bottom: 11rem;
 }
-section > p {
+#card-section > p {
   margin-top: 10px;
   margin-left: 25px;
 }
 
-section > h1 {
+#card-section > h1 {
   margin-left: 25px;
 }
 
-main {
+#main-card-section {
   overflow-x: scroll;
   display: flex;
 }
 
-div {
+.cards {
   padding: 10px;
   margin-top: 10px;
 }
 
-div img {
+.cards img {
   height: 130px;
   background-color: rgba(255, 68, 0, 0.887);
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 }
 
-div p {
+.cards p {
   display: flex;
   justify-content: center;
 }
+.cards p:hover{
+  text-decoration: underline;
+}
 
-img:hover {
+.cards img:hover {
   background-color: orangered;
 }
 
 @media (max-width: 768px) {
-  section {
+  #card-section {
     padding: 20px;
+    bottom: 0;
   }
 }
 
 @media (max-width: 375px) {
-  section {
+  #card-section {
     padding: 10px;
+    bottom: 0;
   }
 }

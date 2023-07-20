@@ -4,7 +4,7 @@
     max-height: 600px;
 }
 
-img, source{
+.imgContainer img, .imgContainer source{
     width: 100%;
     vertical-align: bottom;
     border-style: none;

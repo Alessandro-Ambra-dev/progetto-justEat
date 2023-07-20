@@ -1,14 +1,9 @@
 /* Reset default styles */
 
-body {
-  font-size: 0.875rem;
-  background-color: black;
-}
-
 /* Footer styles */
 .RealFooter {
   font-family: JetSansDigital, Arial, sans-serif;
-  background-color: #fff7f2;
+  background-color: #efedea;
   padding: 40px 0;
   color: #242e30;
 }
@@ -18,6 +13,13 @@ body {
   justify-content: space-between;
   max-width: 1272px;
   margin: 0 auto;
+}
+
+.check-dropdown{
+  width: 100%;
+  text-align: inherit;
+  border: transparent;
+  background: none;
 }
 
 .ConteinerFooter h2 {
@@ -52,39 +54,45 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    padding-top: 10px ;
+    padding-bottom: 0;
   }
   .ConteinerFooter {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .single-container{
+    width: 100%;
+    border-bottom: 1px solid #dbd9d7;
+    padding: 10px;
   }
 
   .ConteinerFooter h2 {
+    margin-left: 10px;
     margin-bottom: 10px;
     cursor: pointer;
+    font-size: 1.5rem;
   }
 
-  .ConteinerFooter ul {
+  .active{
+    margin-left: 30px;
     display: none;
   }
 
-  .ConteinerFooter ul.active {
-    display: block;
-  }
   .dropdown-button {
     cursor: pointer;
   }
-  
+
   .dropdown-button::after {
-    content: '\25BE'; /* Unicode down arrow symbol */
+    content: "\25BE"; /* Unicode down arrow symbol */
     display: inline-block;
     margin-left: 5px;
   }
-  
-  .ConteinerFooter ul {
-    display: none;
-  }
-  
-  .ConteinerFooter ul.active {
-    display: block;
+
+  .check-dropdown:active ul.active{
+    display: block ;
   }
 }
