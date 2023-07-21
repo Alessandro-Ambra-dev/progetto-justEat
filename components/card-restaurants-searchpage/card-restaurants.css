@@ -1,5 +1,4 @@
-
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@charset "UTF-8";
 .bold {
   font-weight: bold;
 }
@@ -25,12 +24,13 @@
 
 .listings {
   display: flex;
+  flex: 3;
   flex-direction: column;
   gap: 1rem;
-  max-width: 1272px;
+  width: 100%;
 }
 
-.card {
+.cardRestaurant {
   color: #000;
   display: grid;
   font-size: 0.875rem;
@@ -38,7 +38,7 @@
   grid-template-columns: minmax(180px, 310px) 1fr;
   text-decoration: none;
 }
-.card .pictureBox {
+.cardRestaurant .pictureBox {
   border-radius: 10px;
   height: 100%;
   min-height: 125px;
@@ -47,13 +47,13 @@
   width: 300px;
   z-index: 2;
 }
-.card .pictureBox .picture {
+.cardRestaurant .pictureBox .picture {
   top: -1.8rem;
   position: absolute;
   max-width: 100%;
   z-index: 1;
 }
-.card .pictureBox .logo {
+.cardRestaurant .pictureBox .logo {
   border: 1px solid #fff;
   border-radius: 8px;
   left: 1rem;
@@ -62,7 +62,7 @@
   top: 1rem;
   z-index: 1;
 }
-.card .pictureBox .sponsoredAndFidelty {
+.cardRestaurant .pictureBox .sponsoredAndFidelty {
   bottom: 1rem;
   display: flex;
   flex-flow: row wrap;
@@ -73,19 +73,19 @@
   position: absolute;
   z-index: 1;
 }
-.card .pictureBox .sponsoredAndFidelty .sponsored {
+.cardRestaurant .pictureBox .sponsoredAndFidelty .sponsored {
   background-color: #292825;
   border-radius: 0.25rem;
   color: #fff;
   padding: 0.25rem;
 }
-.card .pictureBox .sponsoredAndFidelty .fideltyCard {
+.cardRestaurant .pictureBox .sponsoredAndFidelty .fideltyCard {
   background-color: #fdead2;
   border-radius: 0.25rem;
   color: #000;
   padding: 0.25rem;
 }
-.card .cardGrid .headerRestaurant {
+.cardRestaurant .cardGrid .headerRestaurant {
   align-items: center;
   display: flex;
   font-size: 1.25rem;
@@ -94,10 +94,10 @@
   margin: 0.5rem 0;
   width: 100%;
 }
-.card .cardGrid .headerRestaurant:hover {
+.cardRestaurant .cardGrid .headerRestaurant:hover {
   text-decoration: underline;
 }
-.card .cardGrid .ratingAndReviews {
+.cardRestaurant .cardGrid .ratingAndReviews {
   align-items: center;
   display: flex;
   grid-column-start: 1;
@@ -105,11 +105,11 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.card .cardGrid .ratingAndReviews .fa-star,
-.card .cardGrid .ratingAndReviews .ratingRight {
+.cardRestaurant .cardGrid .ratingAndReviews .fa-star,
+.cardRestaurant .cardGrid .ratingAndReviews .ratingRight {
   margin-right: 4px;
 }
-.card .cardGrid .restaurantTypes {
+.cardRestaurant .cardGrid .restaurantTypes {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +118,7 @@
   grid-row-start: 3;
   grid-row-end: 4;
 }
-.card .cardGrid .distance {
+.cardRestaurant .cardGrid .distance {
   align-items: center;
   display: flex;
   grid-column-start: 2;
@@ -126,10 +126,10 @@
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.card .cardGrid .distance .fa-map-marker {
+.cardRestaurant .cardGrid .distance .fa-map-marker {
   margin-right: 4px;
 }
-.card .cardGrid .delivery {
+.cardRestaurant .cardGrid .delivery {
   align-items: center;
   display: flex;
   grid-column-start: 2;
@@ -137,7 +137,7 @@
   grid-row-start: 3;
   grid-row-end: 4;
 }
-.card .cardGrid .delivery .fa-money {
+.cardRestaurant .cardGrid .delivery .fa-money {
   margin-right: 4px;
 }
 
@@ -157,24 +157,24 @@
   .listings {
     align-items: center;
   }
-  .card {
+  .cardRestaurant {
     grid-template-columns: 1fr;
-    width: 91%;
+    width: 95%;
     margin-top: 25px;
     max-width: 95%;
   }
-  .card .pictureBox {
+  .cardRestaurant .pictureBox {
     height: 144px;
     width: 100%;
   }
-  .card .pictureBox .picture {
+  .cardRestaurant .pictureBox .picture {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     position: static;
     width: 100%;
   }
-  .card .cardGrid {
+  .cardRestaurant .cardGrid {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -182,35 +182,35 @@
     height: unset;
     row-gap: 7px;
   }
-  .card .cardGrid .headerRestaurant {
+  .cardRestaurant .cardGrid .headerRestaurant {
     flex: 100%;
     font-size: 1rem;
     margin: 0;
   }
-  .card .cardGrid .restaurantTypes {
+  .cardRestaurant .cardGrid .restaurantTypes {
     flex: 65%;
     flex-wrap: wrap;
     margin-left: 1rem;
   }
-  .card .cardGrid .ratingAndReviews,
-  .card .cardGrid .distance {
+  .cardRestaurant .cardGrid .ratingAndReviews,
+  .cardRestaurant .cardGrid .distance {
     align-items: center;
   }
-  .card .cardGrid .headerRestaurant,
-  .card .cardGrid .delivery {
+  .cardRestaurant .cardGrid .headerRestaurant,
+  .cardRestaurant .cardGrid .delivery {
     align-items: center;
     flex-wrap: wrap;
   }
-  .card .cardGrid .fa-money {
+  .cardRestaurant .cardGrid .fa-money {
     display: none;
   }
-  .card .cardGrid .distance .dotAfterDistance::after {
+  .cardRestaurant .cardGrid .distance .dotAfterDistance::after {
     display: inline;
   }
-  .card .cardGrid .distance .fa-map-marker {
+  .cardRestaurant .cardGrid .distance .fa-map-marker {
     display: none;
   }
-  .card .cardGrid .distance .kilometers {
+  .cardRestaurant .cardGrid .distance .kilometers {
     display: block;
     flex-wrap: wrap;
     font-weight: 700;

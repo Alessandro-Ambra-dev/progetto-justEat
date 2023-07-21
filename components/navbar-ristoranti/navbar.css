@@ -3,11 +3,10 @@
   justify-content: space-between;
   align-items: center;
   min-height: 80px;
-  margin: 0 32px;
+  margin: 0 auto;
 }
-
-#topImage img {
-  height: 60px;
+.container #topImage img {
+  height: 70px;
   cursor: pointer;
 }
 
@@ -34,9 +33,22 @@ nav #list-dropdown li:hover {
   align-items: center;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  header .container {
+    position: relative;
+  }
+  header .container #topImage img {
+    position: absolute;
+    top: 3px;
+    left: -42px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   #list-dropdown {
     visibility: hidden;
+  }
+  header .container #topImage img {
+    position: static;
   }
 }

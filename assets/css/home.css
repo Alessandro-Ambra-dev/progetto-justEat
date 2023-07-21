@@ -7,9 +7,3 @@ html, body {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
 }/*# sourceMappingURL=home.css.map */
-
-#main-container{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}

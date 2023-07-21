@@ -1,0 +1,60 @@
+/* write your css here */
+
+.carouselSearchpage {
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  margin: auto;
+  max-width: 1272px;
+
+  .cardCarouselSearchpage {
+    padding: 10px;
+    margin-top: 10px;
+
+    img {
+      border-radius: 15px;
+      max-height: 105px;
+      width: 140px;
+    }
+
+    .spesa {
+      background-color: #ff8100;
+    }
+
+    .pizza {
+      background-color: #5d3c5b;
+    }
+    .hamburger {
+      background-color: #f65f29;
+    }
+    .italiano {
+      background-color: #feb729;
+    }
+    .americano {
+      background-color: #c1dbdf;
+    }
+    .giapponese {
+      background-color: #f3a6b1;
+    }
+    .cinese {
+      background-color: #ff8100;
+    }
+    .kebab {
+      background-color: #5d3c5b;
+    }
+    p {
+      cursor: pointer;
+      &:hover::before {
+        content: "√  ";
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselSearchpage {
+    margin-top: 65px;
+    padding-left: 1rem;
+    overflow-x: scroll;
+  }
+}

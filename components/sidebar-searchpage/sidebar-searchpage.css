@@ -11,7 +11,7 @@ body {
 .sidebar-box {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  width: 100%;
 }
 
 .reset {
@@ -20,6 +20,7 @@ body {
   cursor: pointer;
   border: 1px solid #f2f0ef;
   border-radius: 30px;
+  font-weight: bold;
   padding: 5px;
 }
 .reset:hover {
@@ -28,7 +29,7 @@ body {
 
 .cousines-section {
   min-width: 250px;
-  width: 17%;
+  width: 100%;
 }
 
 .cousines-header {
@@ -36,6 +37,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 50px;
+  margin-bottom: 0.5rem;
 }
 .cousines-header .icon-and-title {
   height: 50%;
@@ -109,7 +111,7 @@ body {
 
 .filters-section {
   min-width: 250px;
-  width: 17%;
+  width: 100%;
 }
 
 .filters-header {
@@ -131,4 +133,10 @@ body {
 
 li > button {
   list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-box {
+    display: none;
+  }
 }/*# sourceMappingURL=sidebar-searchpage.css.map */

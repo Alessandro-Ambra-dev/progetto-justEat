@@ -1,0 +1,55 @@
+@import url(../../assets/css/common.css);
+
+.addressSectionResults {
+  background-color: #f5f3f1;
+  border-radius: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding: 0.75rem 1.5rem;
+  .mapMarkerAndAddress {
+    .fa {
+      display: inline;
+      height: 20px;
+      margin-right: 5px;
+      padding-top: 2px;
+      position: relative;
+      top: 3px;
+    }
+    .actualAddress {
+      display: inline;
+      font-weight: 400;
+    }
+  }
+
+  .changeAreaContainer {
+    .changeArea {
+      color: #000;
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-left: 23px;
+    }
+  }
+}
+
+// Media queries
+
+@media screen and (max-width: 768px) {
+  .addressSectionResults {
+    flex-wrap: nowrap;
+    padding: 0.75rem;
+    justify-content: space-between;
+    .mapMarkerAndAddress {
+      .actualAddress {
+        display: inline;
+      }
+    }
+    .changeAreaContainer {
+      .changeArea {
+        display: inline;
+        margin-left: 0px;
+      }
+    }
+  }
+}

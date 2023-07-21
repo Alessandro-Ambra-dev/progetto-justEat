@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* write your css here */
+.carouselSearchpage {
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  margin: auto;
+  max-width: 1272px;
+}
+.carouselSearchpage .cardCarouselSearchpage {
+  padding: 10px;
+  margin-top: 10px;
+}
+.carouselSearchpage .cardCarouselSearchpage img {
+  border-radius: 15px;
+  max-height: 105px;
+  width: 140px;
+}
+.carouselSearchpage .cardCarouselSearchpage .spesa {
+  background-color: #ff8100;
+}
+.carouselSearchpage .cardCarouselSearchpage .pizza {
+  background-color: #5d3c5b;
+}
+.carouselSearchpage .cardCarouselSearchpage .hamburger {
+  background-color: #f65f29;
+}
+.carouselSearchpage .cardCarouselSearchpage .italiano {
+  background-color: #feb729;
+}
+.carouselSearchpage .cardCarouselSearchpage .americano {
+  background-color: #c1dbdf;
+}
+.carouselSearchpage .cardCarouselSearchpage .giapponese {
+  background-color: #f3a6b1;
+}
+.carouselSearchpage .cardCarouselSearchpage .cinese {
+  background-color: #ff8100;
+}
+.carouselSearchpage .cardCarouselSearchpage .kebab {
+  background-color: #5d3c5b;
+}
+.carouselSearchpage .cardCarouselSearchpage p {
+  cursor: pointer;
+}
+.carouselSearchpage .cardCarouselSearchpage p:hover::before {
+  content: "√  ";
+}
+
+@media (max-width: 768px) {
+  .carouselSearchpage {
+    margin-top: 65px;
+    padding-left: 1rem;
+    overflow-x: scroll;
+  }
+}/*# sourceMappingURL=index.css.map */

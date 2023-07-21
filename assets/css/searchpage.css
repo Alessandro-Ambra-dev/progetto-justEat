@@ -1,0 +1,57 @@
+@import url(common.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(../../components/navbar-ristoranti/navbar.css);
+@import url(../../components/card-searchpage/index.css);
+@import url(../../components/searchbar-searchpage/searchbar.css);
+@import url(../../components/sidebar-searchpage/sidebar-searchpage.css);
+@import url(../../components/card-restaurants-searchpage/card-restaurants.css);
+@import url(../../components/address-change-area/address-change-area.css);
+@import url(../../components/footer/footer.css);
+@import url(../../components/banner-bottom-footer/banner.css);
+
+.searchpageContainerFootersExcluded {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1272px;
+}
+
+.navbarAndCarousel {
+  /* width: 100%; */
+}
+
+.belowCarousel {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.adressChangeAndSidebar {
+  display: flex;
+  flex-basis: 25%;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.SearchbarAndRestaurants {
+  display: flex;
+  flex-basis: 75%;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .belowCarousel {
+    flex-direction: column;
+  }
+
+  .adressChangeAndSidebar {
+    width: 95%;
+    align-self: center;
+  }
+
+  .SearchbarAndRestaurants {
+    gap: 0;
+  }
+}
